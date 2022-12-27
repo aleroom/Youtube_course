@@ -1,7 +1,6 @@
-import React from 'react';
-import Counter from './components/Counter';
+import React, {useState} from 'react';
+/*import Counter from './components/Counter';*/
 import './style/App.css';
-/*import PostItem from './components/PostItem';*/
 import PostList from './components/PostList';
 
 function App() {
@@ -17,7 +16,13 @@ function App() {
   
   return (
     <div className="App">
+      <form>
+        <input type="text" placeholder='Название поста' />
+        <input type="text" placeholder='Описание поста' />
+      </form>
+
       <PostList posts={posts} title="Список постов 1"/>
+      
 
      
     </div>
